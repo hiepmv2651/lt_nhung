@@ -1,0 +1,25 @@
+--cpu=Cortex-M4.fp.sp
+"exti_userbutton\startup_stm32f401xe.o"
+"exti_userbutton\main.o"
+"exti_userbutton\stm32f4xx_it.o"
+"exti_userbutton\stm32f4xx_hal_msp.o"
+"exti_userbutton\stm32f4xx_hal_tim.o"
+"exti_userbutton\stm32f4xx_hal_tim_ex.o"
+"exti_userbutton\stm32f4xx_hal_rcc.o"
+"exti_userbutton\stm32f4xx_hal_rcc_ex.o"
+"exti_userbutton\stm32f4xx_hal_flash.o"
+"exti_userbutton\stm32f4xx_hal_flash_ex.o"
+"exti_userbutton\stm32f4xx_hal_flash_ramfunc.o"
+"exti_userbutton\stm32f4xx_hal_gpio.o"
+"exti_userbutton\stm32f4xx_hal_dma_ex.o"
+"exti_userbutton\stm32f4xx_hal_dma.o"
+"exti_userbutton\stm32f4xx_hal_pwr.o"
+"exti_userbutton\stm32f4xx_hal_pwr_ex.o"
+"exti_userbutton\stm32f4xx_hal_cortex.o"
+"exti_userbutton\stm32f4xx_hal.o"
+"exti_userbutton\stm32f4xx_hal_exti.o"
+"exti_userbutton\system_stm32f4xx.o"
+--strict --scatter "EXTI_UserButton\EXTI_UserButton.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "EXTI_UserButton.map" -o EXTI_UserButton\EXTI_UserButton.axf
